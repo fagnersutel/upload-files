@@ -12,7 +12,7 @@ $_UP['extensoes'] = array('jpg', 'png', 'gif', 'pdf', 'doc', 'docx');
 $_UP['renomeia'] = false;
 
 // Array com os tipos de erros de upload do PHP
-/*$_UP['erros'][0] = 'Não houve erro';
+$_UP['erros'][0] = 'Não houve erro';
 $_UP['erros'][1] = 'O arquivo no upload é maior do que o limite do PHP';
 $_UP['erros'][2] = 'O arquivo ultrapassa o limite de tamanho especifiado no HTML';
 $_UP['erros'][3] = 'O upload do arquivo foi feito parcialmente';
@@ -23,7 +23,7 @@ $_UP['erros'][4] = 'Não foi feito o upload do arquivo';
 if ($_FILES['arquivo']['error'] != 0) {
 die("Não foi possível fazer o upload, erro:&lt;br /&gt;" . $_UP['erros'][$_FILES['arquivo']['error']]);
 exit; // Para a execução do script
-}*/
+}
 
 // Caso script chegue a esse ponto, não houve erro com o upload e o PHP pode continuar
 
