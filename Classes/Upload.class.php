@@ -41,7 +41,8 @@ class Upload {
         $this->extensoes = $extensoes;
     }
 
-    public function upload() {
+    public function uploaddados() {
+  /*
         // Pasta onde o arquivo vai ser salvo
         $_UP['pasta'] = $this->pasta();
 
@@ -59,7 +60,7 @@ class Upload {
         $_UP['erros'][2] = 'O arquivo ultrapassa o limite de tamanho especifiado no HTML';
         $_UP['erros'][3] = 'O upload do arquivo foi feito parcialmente';
         $_UP['erros'][4] = 'Não foi feito o upload do arquivo';
-
+*/
 // Verifica se houve algum erro com o upload. Se sim, exibe a mensagem do erro
 
         if ($_FILES['arquivo']['error'] != 0) {
