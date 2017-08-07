@@ -43,11 +43,11 @@ class Upload {
 
     public function uploaddados() {
         // Pasta onde o arquivo vai ser salvo
-        $_UP['pasta'] = 'downloads/';
+        $_UP['pasta'] = $this->getPasta();
 // Tamanho máximo do arquivo (em Bytes)
-        $_UP['tamanho'] = 1024 * 1024 * 20; // 2Mb
+        $_UP['tamanho'] = $this->getTamanho();
 // Array com as extensões permitidas
-        $_UP['extensoes'] = array('jpg', 'png', 'gif', 'pdf', 'doc', 'docx');
+        $_UP['extensoes'] = $this->getExtensoes();
 // Renomeia o arquivo? (Se true, o arquivo será salvo como .jpg e um nome único)
         $_UP['renomeia'] = true;
 // Array com os tipos de erros de upload do PHP
