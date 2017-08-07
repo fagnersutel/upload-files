@@ -49,7 +49,7 @@ class Upload {
 // Array com as extensões permitidas
         $_UP['extensoes'] = array('jpg', 'png', 'gif', 'pdf', 'doc', 'docx');
 // Renomeia o arquivo? (Se true, o arquivo será salvo como .jpg e um nome único)
-        $_UP['renomeia'] = false;
+        $_UP['renomeia'] = true;
 // Array com os tipos de erros de upload do PHP
         $_UP['erros'][0] = 'Não houve erro';
         $_UP['erros'][1] = 'O arquivo no upload é maior do que o limite do PHP';
@@ -76,7 +76,7 @@ class Upload {
 // Primeiro verifica se deve trocar o nome do arquivo
             if ($_UP['renomeia'] == true) {
 // Cria um nome baseado no UNIX TIMESTAMP atual e com extensão .jpg
-                $nome_final = time() . '.jpg';
+                $nome_final = time() .$extensao;
             } else {
 // Mantém o nome original do arquivo
                 $nome_final = $_FILES['arquivo']['name'];
