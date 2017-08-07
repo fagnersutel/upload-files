@@ -42,27 +42,11 @@ class Upload {
     }
 
     public function uploaddados() {
-  /*
-        // Pasta onde o arquivo vai ser salvo
-        $_UP['pasta'] = $this->pasta();
-
-// Tamanho máximo do arquivo (em Bytes)
-        $_UP['tamanho'] = $this->tamanho();
-// Array com as extensões permitidas
-        $_UP['extensoes'] = $this->extensoes();
-
-// Renomeia o arquivo? (Se true, o arquivo será salvo como .jpg e um nome único)
-        $_UP['renomeia'] = false;
-
-// Array com os tipos de erros de upload do PHP
-        $_UP['erros'][0] = 'Não houve erro';
-        $_UP['erros'][1] = 'O arquivo no upload é maior do que o limite do PHP';
-        $_UP['erros'][2] = 'O arquivo ultrapassa o limite de tamanho especifiado no HTML';
-        $_UP['erros'][3] = 'O upload do arquivo foi feito parcialmente';
-        $_UP['erros'][4] = 'Não foi feito o upload do arquivo';
-*/
+  
 // Verifica se houve algum erro com o upload. Se sim, exibe a mensagem do erro
-
+        
+        echo 'classe';
+/*
         if ($_FILES['arquivo']['error'] != 0) {
             die("Não foi possível fazer o upload, erro:&lt;br /&gt;" . $_UP['erros'][$_FILES['arquivo']['error']]);
             exit; // Para a execução do script
@@ -101,6 +85,8 @@ class Upload {
                 echo "Não foi possível enviar o arquivo, tente novamente";
             }
         }
+        
+        */
     }
 
 }
